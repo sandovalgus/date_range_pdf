@@ -1,0 +1,26 @@
+<h1>Reporte#index</h1>
+<p>Find me in app/views/reporte/index.html.erb</p>
+
+
+
+  <%= form_tag pdf_reporte_path( @blogs, format: :pdf), method: :get, :target => '_blank' do %>
+
+  <div class="form-group">
+ 	  <div class="field">
+
+    <%= date_select :fecha1, "fecha" %>
+  </div>
+  </div>
+
+    <div class="form-group">
+ 	  <div class="field">
+
+    <%= date_select :fecha2, "fecha"	 %>
+  </div>
+  </div>
+
+
+  <p>Entre</p>
+   <button type="submit">Imprimir</button>
+<%end%>
+
